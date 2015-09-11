@@ -5,6 +5,7 @@ import becker.robots.Robot;
 import becker.robots.Thing;
 import becker.robots.Wall;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
