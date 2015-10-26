@@ -27,19 +27,19 @@ public class NumberGuessingGame {
             int guess = input.nextInt();
 
             //force a number between 1 and 100
-            while(guess < 1 || guess > 100){
+            while (guess < 1 || guess > 100) {
                 System.out.println("Try again. Enter a number between 1 and 100");
-                    guess = input.nextInt();
+                guess = input.nextInt();
             }
             //check the guess
             //guess is correct
             if (guess == randomNumber) {
                 System.out.println("You Win!!");
                 break;
-            //guess is too high
+                //guess is too high
             } else if (guess > randomNumber) {
                 System.out.println("Too High");
-            //guess is too low
+                //guess is too low
             } else {
                 System.out.println("Too Low");
             }

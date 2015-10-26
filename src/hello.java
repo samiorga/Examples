@@ -9,7 +9,6 @@ import becker.robots.Wall;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author iorgs3184
@@ -21,25 +20,24 @@ public class hello {
      */
     public static void main(String[] args) {
         // TODO code application logic here
- 
-    City kw = new City ();
-    
-    new Wall(kw, 2, 4, Direction.EAST);
-    
-    new Thing(kw, 2, 4);
-    
-    Robot sam = new Robot(kw, 2, 2, Direction.EAST);
-    
-    while (sam.frontIsClear())
-    {
-        sam.move();
-    }
-   
-    sam.pickThing();
-    
-    
-    
-    
-    
+
+        City kw = new City();
+
+        new Wall(kw, 2, 4, Direction.EAST);
+
+        new Thing(kw, 2, 4);
+
+        Robot sam = new Robot(kw, 2, 2, Direction.EAST);
+
+        while (sam.frontIsClear()) {
+            sam.move();
+        }
+
+        sam.pickThing();
+
+
+
+
+
     }
 }
