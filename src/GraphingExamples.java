@@ -90,7 +90,7 @@ public class GraphingExamples extends JComponent{
             
             // all your game rules and move is done in here
             // GAME LOGIC STARTS HERE 
-            
+            pacmanX++;
             
 
             // GAME LOGIC ENDS HERE 
