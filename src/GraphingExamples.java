@@ -64,17 +64,20 @@ public class GraphingExamples extends JComponent{
 
 
 
-        //draw a polygon
+//draw a polygon
         int[] xpoints = {400, 500, 300};
         int[] ypoints = {400, 550, 550};
         g.setColor(Color.GREEN);
         g.fillPolygon(xpoints, ypoints, 3);
         
+        //horizontal lines
         g.setColor(Color.BLACK);
         for(int x = 0; x < WIDTH; x = x + 50){
             g.drawLine(x, 0, x, HEIGHT);
-        }
-                
+        }//vetical lines
+        for(int x = 0; x < HEIGHT; x = x + 50){
+            g.drawLine(0, x, WIDTH, x);
+        }        
         // GAME DRAWING ENDS HERE
     }
     
