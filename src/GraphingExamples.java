@@ -18,8 +18,9 @@ public class GraphingExamples extends JComponent{
     static final int HEIGHT = 600;
     
     int pacmanX = 200;
+    int pacmanY = 200;
     
-    // sets the framerate and delay for our game
+// sets the framerate and delay for our game
     // you just need to select an approproate framerate
     long desiredFPS = 60;
     long desiredTime = (1000)/desiredFPS;
@@ -56,6 +57,13 @@ public class GraphingExamples extends JComponent{
         g.setColor(Color.BLACK);
         g.drawArc(pacmanX, 75, 125, 125, 45, 270);
         
+        g.setColor(Color.YELLOW);
+        g.fillOval(pacmanY, 100, 125, 125);
+        g.setColor(Color.BLACK);
+        g.drawOval(pacmanY, 100, 125, 125);
+
+
+
         //draw a polygon
         int[] xpoints = {400, 500, 300};
         int[] ypoints = {400, 550, 550};
@@ -91,7 +99,7 @@ public class GraphingExamples extends JComponent{
             // all your game rules and move is done in here
             // GAME LOGIC STARTS HERE 
             pacmanX++;
-            
+            pacmanY--;
 
             // GAME LOGIC ENDS HERE 
             
